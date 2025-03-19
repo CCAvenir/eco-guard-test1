@@ -1,54 +1,73 @@
-<!-- Why Eco-Guard Page -->
-<nav class="navbar">
-    <div class="logo-container">
-        <span>LOGO</span>
+<div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="assets/images/Eco-Guard.png" alt="Logo">
+      </div>
+      <div class="nav-links" id="navLinks">
+            <a href="/home" routerLinkActive="active">HOME</a>
+            <a href="/about" routerLinkActive="active">ABOUT</a>
+            <a href="/why-ecoguard" routerLinkActive="active">WHY EG?</a>
+            <a href="/contact" routerLinkActive="active">CONTACT US</a>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+  
+    <!-- Header Section (Same Style as About Us) -->
+    <div class="header-section">
+      <h1>Why Eco-Guard?</h1>
+      <p>EcoGuard is committed to safeguarding the planet through innovative solutions for environmental protection. By focusing on sustainability, 
+        eco-friendly practices, and conservation efforts, we empower individuals and businesses to make impactful changes for a healthier Earth. </p>
     </div>
-    <div class="nav-title">
-        <span class="title">Header Banner</span>
-        <span class="description">Description</span>
-    </div>
-    <div class="nav-links">
-            <a routerLink="/home" routerLinkActive="active">HOME</a>
-            <a routerLink="/about" routerLinkActive="active">ABOUT</a>
-            <a routerLink="/why-ecoguard" routerLinkActive="active">WHY EG?</a>
-            <a routerLink="/contact" routerLinkActive="active">CONTACT US</a>
-          </div>
-          <div class="menu-icon" (click)="toggleMenu()">☰</div>
-    <div class="hamburger-menu" (click)="toggleMenu()">
-        <span>☰</span>
-    </div>
-</nav>
-
-<section class="content-section">
-    <h2>Beginnings</h2>
-    <ul>
-        <li>Content</li>
-        <li>Content</li>
-        <li>Content</li>
-    </ul>
-
-    <h2>Engagement</h2>
-    <ul>
-        <li>Content</li>
-        <li>Content</li>
-        <li>Content</li>
-    </ul>
-
-    <h2>Purpose</h2>
-    <ul>
-        <li>Content</li>
-        <li>Content</li>
-        <li>Content</li>
-    </ul>
-
-    <h2>Our Belief</h2>
-    <ul>
-        <li>Content</li>
-        <li>Content</li>
-        <li>Content</li>
-    </ul>
-</section>
-
-<footer class="footer">
-    <p>©2025 WD-302 All rights reserved.</p>
-</footer>
+  
+    <!-- Why Eco-Guard Content Section -->
+    <section class="content-section">
+      <div class="content-box">
+        <h2>Beginnings</h2>
+        <ul>
+          <li>Eco Guard was founded with a vision for a sustainable future.</li>
+          <li>We identified key environmental issues that needed urgent solutions.</li>
+          <li>Through innovation, we developed eco-friendly solutions.</li>
+        </ul>
+      </div>
+  
+      <div class="content-box">
+        <h2>Engagement</h2>
+        <ul>
+          <li>We collaborate with businesses, governments, and communities.</li>
+          <li>Our awareness campaigns educate people about sustainable practices.</li>
+          <li>Through partnerships, we implement impactful environmental programs.</li>
+        </ul>
+      </div>
+  
+      <div class="content-box">
+        <h2>Purpose</h2>
+        <ul>
+          <li>To minimize waste and promote sustainable consumption.</li>
+          <li>To provide businesses with sustainable alternatives.</li>
+          <li>To advocate for a greener and cleaner world.</li>
+        </ul>
+      </div>
+  
+      <div class="content-box">
+        <h2>Our Belief</h2>
+        <ul>
+          <li>Every action counts in protecting the environment.</li>
+          <li>Sustainability is a shared responsibility.</li>
+          <li>Innovation and awareness drive change.</li>
+        </ul>
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer>
+      <p>©2025 WD-302 All rights reserved.</p>
+    </footer>
+  </div>
+  
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+  

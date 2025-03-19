@@ -1,57 +1,79 @@
 <div class="container">
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="logo-container">
-        <span>LOGO</span>
-      </div>
-      <div class="nav-links">
-        <a routerLink="/home" routerLinkActive="active">HOME</a>
-        <a routerLink="/about" routerLinkActive="active">ABOUT</a>
-        <a routerLink="/why-ecoguard" routerLinkActive="active">WHY EG?</a>
-        <a routerLink="/contact" routerLinkActive="active">CONTACT US</a>
-      </div>
-      <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    </nav>
-  
-    <!-- Header Section -->
-    <div class="header-section">
-      <h1>About Us</h1>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="assets/images/Eco-Guard.png" alt="Logo">
     </div>
-  
-    <!-- About Content Section -->
-    <section class="about-content">
-      <div class="about-description">
+    <div class="nav-links">
+      <a href="/home" routerLinkActive="active">HOME</a>
+      <a href="/about" routerLinkActive="active">ABOUT</a>
+      <a href="/why-ecoguard" routerLinkActive="active">WHY EG?</a>
+      <a href="/contact" routerLinkActive="active">CONTACT US</a>
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- Header Section -->
+  <div class="header-section">
+    <h1>About Us</h1>
+    <p>We are a passionate group dedicated to the preservation and protection of trees. Through education, community engagement, 
+      and advocacy, we work to raise awareness about the vital role trees play in our environment, health, and future. Join us 
+      in fostering a greener, more sustainable world, one tree at a time.</p>
+  </div>
+
+  <!-- About Content Section -->
+  <section class="about-content">
+    <div class="about-description">
+      <p>
+        IIn today’s world, waste disposal is becoming a bigger issue, impacting both our environment and our health. Barangay Balibago, Angeles City, Pampanga, 
+        is no exception. With more waste being produced every day and limited ways to manage it properly, the community needs a smarter, more efficient system 
+        to handle waste responsibly. That’s where EcoGuard comes in—a digital platform designed to make waste disposal easier, encourage recycling, and promote 
+        environmental responsibility among residents.
+      </p>
+      <p>
+        That’s where <strong>EcoGuard</strong> acts as a bridge between the community and waste collection services, giving residents an easy-to-use platform 
+        to schedule pickups, learn about proper waste segregation, and track their environmental impact. By combining modern technology with existing waste 
+        management efforts, EcoGuard makes the process more accessible, efficient, and convenient. With real-time updates, educational resources, and interactive 
+        features, residents stay informed and engaged in keeping their surroundings clean.
+      </p>
+      <p>
+        At its core, EcoGuard is about building a greener future for Barangay Balibago. By working together—residents, local authorities, and environmental 
+        advocates—we can reduce waste, recycle more, and adopt responsible disposal habits. Our goal is to make Barangay Balibago a model for sustainable waste 
+        management, showing how a community-driven effort can lead to a cleaner, healthier, and more environmentally conscious future. Together, we can turn 
+        responsible waste management into a way of life!
+      </p>
+    </div>
+
+    <div class="mission-vision-container">
+      <div class="mission-box">
+        <h2>Our Mission</h2>
         <p>
-          Welcome to Eco Guard! We are committed to providing sustainable solutions that 
-          contribute to a greener and healthier future. Our mission and vision guide us 
-          in making a positive impact on the environment and the community.
+          To empower the residents of Barangay Balibago, Angeles City, Pampanga, through a digital waste management platform that fosters responsible disposal, 
+          recycling, and community engagement. By leveraging technology, we aim to educate citizens, streamline waste collection, and promote sustainable 
+          practices for a cleaner and greener environment.
         </p>
       </div>
-  
-      <div class="mission-vision-container">
-        <div class="mission-box">
-          <h2>Our Mission</h2>
-          <p>
-            To protect the environment by promoting sustainable products and solutions 
-            that reduce waste and pollution.
-          </p>
-        </div>
-        <div class="vision-box">
-          <h2>Our Vision</h2>
-          <p>
-            To be a leading organization in eco-friendly innovations, inspiring individuals 
-            and businesses to adopt green practices.
-          </p>
-        </div>
-        <div class="image-box">
-          <img src="assets/images/about-image.jpg" alt="Eco Guard Image">
-        </div>
+      <div class="vision-box">
+        <h2>Our Vision</h2>
+        <p>
+          To create a future where every household actively participates in responsible waste management, making Barangay Balibago a model of sustainability. 
+          Through innovation, education, and collaboration, EcoGuard envisions a cleaner, healthier, and environmentally conscious community for generations to come.
+        </p>
       </div>
-    </section>
-  
-    <!-- Footer -->
-    <footer>
-      <p>©2025 WD-302 All rights reserved.</p>
-    </footer>
-  </div>
-  
+      <div class="image-box">
+        <img src="assets\images\tree-plant.jpg" alt="Eco Guard Environmental Awareness">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>©2025 WD-302 All rights reserved.</p>
+  </footer>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>

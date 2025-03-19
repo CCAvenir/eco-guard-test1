@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WhyEcoguardComponent } from './why-ecoguard.component';
+import { WhyEcoGuardComponent } from './why-ecoguard.component';
 
 describe('WhyEcoguardComponent', () => {
-  let component: WhyEcoguardComponent;
-  let fixture: ComponentFixture<WhyEcoguardComponent>;
+  let component: WhyEcoGuardComponent;
+  let fixture: ComponentFixture<WhyEcoGuardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WhyEcoguardComponent]
+      imports: [WhyEcoGuardComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(WhyEcoguardComponent);
+    fixture = TestBed.createComponent(WhyEcoGuardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

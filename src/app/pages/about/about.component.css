@@ -1,185 +1,210 @@
 /* General Styles */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  /* Navbar */
-  .navbar {
-    background-color: #28a745;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-  
-  /* Logo */
-  .logo-container {
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Nav Links */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #28a745;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Logo - Reduced Size */
+.logo-container {
+  width: 40px; /* Reduced from 50px */
+  height: 40px; /* Reduced from 50px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container img {
+  width: 100%; /* Ensures the image scales properly */
+  height: auto;
+  max-width: 35px; /* Limits the image size */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: #28a745;
+}
+
+/* Mobile Menu */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Header Section */
+.header-section {
+  background-color: #4d8f2e;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header-section p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* About Content */
+.about-content {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* About Description */
+.about-description {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission, Vision, and Image Containers */
+.mission-vision-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+  text-align: center;
+}
+
+.mission-box, .vision-box {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Section - Increased Size */
+.image-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 450px; /* Increased size */
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-box img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: #28a745;
+    width: 150px;
+    text-align: right;
+  }
+
+  .nav-links.show {
     display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .mission-vision-container {
+    flex-direction: column;
+  }
+
+  .mission-box, .vision-box, .image-box {
+    width: 100%;
+  }
+
+  .image-box img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logo-container img {
+    max-width: 30px; /* Smaller logo for mobile */
+  }
+
+  .about-content {
+    width: 95%;
+  }
+
+  .mission-vision-container {
+    flex-direction: column;
     gap: 10px;
   }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .nav-links a:hover {
-    background-color: white;
-    color: #28a745;
-  }
-  
-  /* Mobile Menu */
-  .menu-icon {
-    display: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  /* Header Section */
-  .header-section {
-    background-color: #4d8f2e;
-    color: white;
-    text-align: center;
-    padding: 50px 0;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  /* About Content Section */
-  .about-content {
-    width: 80%;
-    margin: 40px auto;
-  }
-  
-  /* About Description */
-  .about-description {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Mission, Vision, and Image Containers */
-  .mission-vision-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    gap: 20px;
-  }
-  
-  /* Mission and Vision Boxes */
-  .mission-box, .vision-box {
-    flex: 1;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Image Box */
-  .image-box {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .image-box img {
+
+  .mission-box, .vision-box, .image-box {
     width: 100%;
-    max-width: 250px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
   }
-  
-  /* Footer */
-  footer {
-    background-color: #28a745;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-    margin-top: auto;
+
+  .image-box img {
+    max-width: 100%;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      right: 10px;
-      background: #28a745;
-      width: 150px;
-      text-align: right;
-    }
-  
-    .nav-links.show {
-      display: flex;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-  
-    .mission-vision-container {
-      flex-direction: column;
-    }
-  
-    .mission-box, .vision-box, .image-box {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .logo-container {
-      width: 50px;
-      height: 50px;
-    }
-  
-    .about-content {
-      width: 95%;
-    }
-  
-    .mission-vision-container {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .mission-box, .vision-box, .image-box {
-      width: 100%;
-      padding: 15px;
-    }
-  
-    .image-box img {
-      max-width: 100%;
-    }
-  }
-  
+}

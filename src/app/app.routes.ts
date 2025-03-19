@@ -5,10 +5,10 @@ import { WhyEcoGuardComponent } from './pages/why-ecoguard/why-ecoguard.componen
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', component: HomepageComponent }, 
   { path: 'home', component: HomepageComponent },
   { path: 'about', component: AboutComponent },
   { path: 'why-ecoguard', component: WhyEcoGuardComponent },
   { path: 'contact', component: ContactUsComponent },
-  { path: '**', redirectTo: 'home' } // Redirect invalid routes
+  { path: '**', redirectTo: '/home' } // Redirect unknown routes to home
 ];
