@@ -9,10 +9,10 @@ body, html {
     min-height: 100vh;
   }
   
-  /* Navbar */
-  .navbar {
+/* Navbar */
+.navbar {
     background-color: #28a745;
-    padding: 10px 20px;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +33,7 @@ body, html {
     height: auto;
     max-width: 35px; /* Limits the image size */
   }
-  
+
   /* Navigation Links */
   .nav-links {
     display: flex;

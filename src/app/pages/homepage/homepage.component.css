@@ -9,15 +9,15 @@ body, html {
     min-height: 100vh;
   }
   
-  /* Navbar */
-  .navbar {
-    background-color: #28a745;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
+ /* Navbar */
+.navbar {
+  background-color: #28a745;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
   
 /* Logo - Reduced Size */
 .logo-container {
@@ -35,27 +35,26 @@ body, html {
 }
 
   /* Nav Links */
-  .nav-links {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .nav-links a:hover {
-    background-color: white;
-    color: #28a745;
-  }
-  
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: #28a745;
+}
   /* Mobile Menu */
   .menu-icon {
     display: none;
